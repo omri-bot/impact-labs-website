@@ -1,11 +1,26 @@
-// Sticky Navbar
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
+// Intersection Observer for scroll reveal animations
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal, .reveal-left");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 100;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+window.addEventListener("scroll", reveal);
+// Trigger once on load
+reveal();
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
   if (window.scrollY > 50) {
-    navbar.style.boxShadow = '0 4px 12px rgba(11, 13, 31, 0.1)';
+    navbar.classList.add("scrolled");
   } else {
-    navbar.style.boxShadow = '0 1px 0 rgba(11, 13, 31, 0.05)';
+    navbar.classList.remove("scrolled");
   }
 });
-
-// Any additional interactive elements from the new UI Kit can go here.
