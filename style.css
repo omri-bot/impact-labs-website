@@ -589,3 +589,130 @@ h3 { font-size: 20px; font-weight: 700; }
   
   .hero-actions { flex-direction: column; }
 }
+
+/* ==========================================================================
+   Clients Section (Super Futuristic Marquee)
+   ========================================================================== */
+.clients-section {
+  padding: var(--space-10) 0;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.clients-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(255, 106, 0, 0.15) 0%, transparent 60%);
+  border-radius: 50%;
+  z-index: 0;
+  animation: pulseOrb 6s infinite alternate ease-in-out;
+}
+
+@keyframes pulseOrb {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+}
+
+.clients-marquee {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 60px 0;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  direction: ltr; /* Force LTR for continuous scroll translation */
+  animation: marqueeScroll 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.client-logo-card {
+  width: 240px;
+  height: 120px;
+  background: rgba(11, 13, 31, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 106, 0, 0.3);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  color: var(--orange-500);
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  box-shadow: 0 0 20px rgba(255,106,0,0.1), inset 0 0 15px rgba(255,106,0,0.1);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.client-logo-card::before {
+  content: '';
+  position: absolute;
+  top: -50%; left: -50%; width: 200%; height: 200%;
+  background: conic-gradient(transparent, rgba(255,106,0,1), transparent 25%);
+  animation: borderRotate 3s linear infinite;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+@keyframes borderRotate {
+  100% { transform: rotate(360deg); }
+}
+
+.client-logo-card::after {
+  content: '';
+  position: absolute;
+  inset: 2px;
+  background: var(--navy-1000);
+  border-radius: calc(var(--radius-lg) - 2px);
+  z-index: 1;
+}
+
+.client-logo-card > * {
+  z-index: 2; /* Content above spinning border */
+  transition: all 0.3s ease;
+}
+
+.client-logo-card i {
+  width: 32px;
+  height: 32px;
+}
+
+.client-logo-card:hover {
+  transform: scale(1.15) translateY(-15px) rotateX(10deg);
+  box-shadow: 0 20px 40px rgba(255,106,0,0.5), inset 0 0 30px rgba(255,106,0,0.5);
+  color: #fff;
+  border-color: transparent; /* Let the ::before border shine through */
+  z-index: 10;
+}
+
+.client-logo-card:hover::before {
+  opacity: 1;
+}
