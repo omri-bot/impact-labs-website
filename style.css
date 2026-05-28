@@ -182,6 +182,11 @@ h3 { font-size: 20px; font-weight: 700; }
   box-shadow: 0 6px 16px rgba(43, 48, 142, 0.4), inset 0 2px 4px rgba(255, 255, 255, 0.1);
 }
 
+.btn-secondary:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(43, 48, 142, 0.3), inset 0 4px 8px rgba(27, 31, 92, 0.3);
+}
+
 .btn-ghost {
   background: var(--gradient-metal);
   color: var(--navy-900);
@@ -192,6 +197,11 @@ h3 { font-size: 20px; font-weight: 700; }
 .btn-ghost:hover {
   box-shadow: inset 0 0 0 2px var(--navy-900), var(--shadow-2);
   transform: translateY(-2px);
+}
+
+.btn-ghost:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 0 0 2px var(--navy-900), var(--shadow-1);
 }
 
 .btn-inline {
@@ -206,6 +216,10 @@ h3 { font-size: 20px; font-weight: 700; }
 
 .btn-inline:hover {
   color: var(--navy-900);
+}
+
+.btn-inline:active {
+  transform: translateY(1px);
 }
 
 /* Sizes */
@@ -377,6 +391,15 @@ h3 { font-size: 20px; font-weight: 700; }
   color: var(--orange-500);
 }
 
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--navy-700);
+  cursor: pointer;
+  padding: var(--space-2);
+}
+
 /* Hero Section */
 .hero {
   background: var(--navy-900);
@@ -440,6 +463,9 @@ h3 { font-size: 20px; font-weight: 700; }
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-6);
   margin-top: var(--space-8);
+}
+.features-grid {
+  grid-template-columns: repeat(4, 1fr);
 }
 .services-section .section-title {
   text-align: center;
@@ -522,11 +548,27 @@ h3 { font-size: 20px; font-weight: 700; }
 @media (max-width: 768px) {
   .hero-content { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; }
+  .features-grid { grid-template-columns: 1fr; }
   .about-grid { grid-template-columns: 1fr; }
   .knowledge-grid { grid-template-columns: 1fr; }
-  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
   
   .display { font-size: 42px; }
   .topbar { display: none; } /* Hide topbar on mobile for cleaner look */
-  .nav-links { display: none; }
+  
+  .mobile-menu-btn { display: block; }
+  .nav-links { 
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: var(--space-4);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .nav-links.active { display: flex; }
+  
+  .hero-actions { flex-direction: column; }
 }

@@ -32,9 +32,13 @@
     <!-- Navbar -->
     <header class="navbar" id="navbar">
       <div class="container nav-inner">
-        <a href="#contact" class="btn btn-primary btn-md">צרו איתנו קשר &larr;</a>
+        <a href="#contact" class="btn btn-primary btn-md">צרו איתנו קשר ישירות</a>
         
-        <nav class="nav-links">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+          <i data-lucide="menu"></i>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
           <a href="#community">קהילה</a>
           <a href="#about">אודותינו</a>
           <a href="#innovation">מרכז חדשנות</a>
@@ -43,7 +47,7 @@
         </nav>
 
         <a href="#" class="logo">
-          <img src="https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64b9175402c918231cde4089_ImpactLabs-logo-1.webp" alt="Impact Labs" class="logo-img">
+          <img src="https://www.impactlabs.tech/wp-content/uploads/2022/10/ImpactLabs-logo-1.webp" alt="Impact Labs" class="logo-img">
         </a>
       </div>
     </header>
@@ -52,17 +56,17 @@
     <section class="hero">
       <div class="container hero-content">
         <div class="hero-image" style="order: -1;">
-          <img src="https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64df58d8396e94e4bb1d55ed_section1-impact-hp-top1.webp" alt="Impact Labs Workspace" style="aspect-ratio: 4/3; object-fit: cover;">
+          <img src="https://www.impactlabs.tech/wp-content/uploads/2022/10/section1-impact-hp-top1.webp" alt="Impact Labs Workspace" style="aspect-ratio: 4/3; object-fit: cover;">
         </div>
         <div class="hero-text">
           <div class="tagline">TECHNOLOGY MEETS HUMANITY</div>
           <h1 class="display">תשתית לבני אדם ומכונות שעושות <span class="text-orange">אימפקט.</span></h1>
           <p>
-            תשתיות נוחות ומשמעותיות לשיתופי פעולה בין אנשים ומכונות, לפתרון אתגרים בייצור דיגיטלי מהיר. 
+            תשתיות נוחות ומשמעותיות לשיתופי פעולה בין אנשים ומכונות, לפתרון אתגרים בייצור דיגיטלי מהיר.
           </p>
           <div class="hero-actions">
-            <a href="#services" class="btn btn-primary btn-lg">כניסה למערכת ההזמנות לייצור &larr;</a>
-            <a href="#about" class="btn btn-ghost btn-lg">בואו להכיר אותנו קצת יותר &larr;</a>
+            <a href="#services" class="btn btn-primary btn-lg">כניסה למערכת ההזמנות לייצור בהדפסה תלת ממדית</a>
+            <a href="#about" class="btn btn-ghost btn-lg">בואו להכיר אותנו קצת יותר</a>
           </div>
         </div>
       </div>
@@ -101,10 +105,10 @@
       </div>
     </section>
 
-    <!-- Deep Dive Features (From Original Text) -->
+    <!-- Deep Dive Features -->
     <section class="about-section" style="background: var(--neutral-100); padding: 60px 0;">
       <div class="container">
-        <div class="services-grid" style="grid-template-columns: repeat(4, 1fr);">
+        <div class="services-grid features-grid">
           <div class="card card-navy">
             <h3 class="mb-4">תמיכה בפיתוח אפליקציות להדפסה</h3>
             <p style="font-size: 14px; opacity: 0.9;">מלווים אתכם בקידום רעיוני ומעשי של אפליקציות חדשניות בהדפסה תלת מימדית ומהווים מרכז מחקרי, אקדמי ותעשייתי ליצירה של שימושים ייחודיים במדפסות.</p>
@@ -117,11 +121,11 @@
           </div>
           <div class="card">
             <h3 class="text-navy mb-4">ליווי מעבר למלאי דיגיטלי</h3>
-            <p class="text-neutral-500" style="font-size: 14px;">ליווי ואינטגרציה של פרויקטים מורכבים בהדפסה.</p>
+            <p class="text-neutral-500" style="font-size: 14px;">ליווי ואינטגרציה של פרויקטים מורכבים בהדפסה</p>
           </div>
         </div>
         <div style="text-align: center; margin-top: 40px;">
-          <a href="#" class="btn btn-secondary btn-lg">בואו לשמוע עוד &larr;</a>
+          <a href="#" class="btn btn-secondary btn-lg">בואו לשמוע עוד</a>
         </div>
       </div>
     </section>
@@ -131,25 +135,22 @@
       <div class="container about-grid">
         <div class="about-text">
           <div class="tagline">אודותינו</div>
-          <h2 class="display text-navy mb-6">למה <span class="text-orange">אימפקט?</span></h2>
+          <h2 class="display text-navy mb-6">למה אימפקט?</h2>
           <p class="body-text text-neutral-700 mb-4">
-            IMPACT LABS היא מרכז חדשנות ומקום מפגש בין אנשים ומכונות הממוקם בצומת השלום תל אביב. 
-            מתחם העבודה לחדשנות בחומרה ומוצרים פיזיים הייחודי והמגוון ביותר בישראל, מתפרס על פני 4 קומות ומכיל תשתיות 
-            של מכונות ורגולציה המאפשרים לחברות טכנולוגיה וגופים גדולים להתנסות ולעשות מו"פ מהיר.
+            IMPACT LABS היא מרכז חדשנות ומקום מפגש בין אנשים ומכונות הממוקם בצומת השלום תל אביב. מתחם העבודה לחדשנות בחומרה ומוצרים פיזיים הייחודי והמגוון ביותר בישראל, מתפרס על פני 4 קומות ומכיל תשתיות של מכונות ורגולציה המאפשרים לחברות טכנולוגיה וגופים גדולים להתנסות ולעשות מו"פ מהיר.
           </p>
           <p class="body-text text-neutral-700 mb-6">
-            אימפקט 2.0 היא קהילה של שיתופי פעולה, שחקנים רבים עם תשוקה לעשייה, להשפעה חיובית ולטכנולוגיה שנפגשים 
-            במקום בו יש חיכוך תמידי בין אנשים ומכונות. מחיכוך נוצרת אנרגיה, ועם אנרגיה אפשר לעשות דברים טובים. אנחנו קיימים כדי לרתום את הניצוצות ברמת המדינה, התעשייה, החברה, הצוות או הרעיון במוחו של הוגה בודד, ולתת את ההזדמנות לייצר אימפקט.
+            אימפקט 2.0 היא קהילה של שיתופי פעולה, שחקנים רבים עם תשוקה לעשייה, להשפעה חיובית ולטכנולוגיה שנפגשים במקום בו יש חיכוך תמידי בין אנשים ומכונות. מחיכוך נוצרת אנרגיה, ועם אנרגיה אפשר לעשות דברים טובים. אנחנו קיימים כדי לרתום את הניצוצות ברמת המדינה, התעשייה, החברה, הצוות או הרעיון במוחו של הוגה בודד, ולתת את ההזדמנות לייצר אימפקט, כזה שיגרום לאנרגיה להתפרץ ולחדשנות לפרוץ.
           </p>
-          <a href="#" class="btn btn-secondary btn-md">סיור וירטואלי 360 במרחב (ככה התחלנו) &larr;</a>
+          <a href="#" class="btn btn-secondary btn-md">ככה התחלנו (וידאו 360 של אימפקט לאבס מ-2017)</a>
         </div>
         <div class="about-image">
-          <img src="https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64b669b32cdd63e80d46dd86_ImpactLabs-about.webp" alt="Impact Labs Workspace">
+          <img src="https://www.impactlabs.tech/wp-content/uploads/2022/10/ImpactLabs-about.webp" alt="Impact Labs Workspace">
         </div>
       </div>
     </section>
 
-    <!-- Innovation Center (Detailed text) -->
+    <!-- Innovation Center -->
     <section id="innovation" class="knowledge-section" style="background: var(--navy-900); color: #fff;">
       <div class="container">
         <div class="tagline">מרכז חדשנות</div>
@@ -157,22 +158,22 @@
         <div class="about-grid">
           <div>
             <p class="mb-4" style="color: var(--navy-100);">החברה פועלת כ'מועדון לקוחות' אקסולוסיבי ולמעשה עובדת בעיקר מול לקוחות בטחוניים, לקוחות תעשייתיים גדולים וחברות טכנולוגיה מהסקטורים הרפואיים והתעופתיים. עם לקוחות אלה החברה עובדת בהסכמי מסגרת קבועים חודשיים המציעים שילובים בין קורסים והכשרות טכנולוגיים, שימוש 'שיתופי' בתשתיות ומכונות, ליווי מו"פ ופרויקטים, רכש וייצור מהיר במיוחד והשכרות קבע של מתחמים פרטיים-ציבוריים במרחבי העבודה.</p>
-            <p style="color: var(--navy-100);">בזכות הייצור הדיגיטלי, גם צוותים מקצועיים שלא יודעים לנסר, לשייף, לרתך, להלחים, לבצע רכש מהיר או פעולות לוגיסטיות יכולים עדיין להגיע לתוצאות מרשימות. אותה יכולת לדמיין חלק פיזי במחשבות ולהחזיק אותו ביד אחרי כמה שעות, בעלויות נמוכות, מאפשר למתכננים ומהנדסים לבצע איטרציות ולייצר המון חלקים.</p>
+            <p style="color: var(--navy-100);">בזכות הייצור הדיגיטלי, גם צוותים מקצועיים שלא יודעים לנסר, לשייף, לרתך, להלחים, לבצע רכש מהיר או פעולות לוגיסטיות יכולים עדיין להגיע לתוצאות מרשימות. הצלחנו לאפשר לאנשים שלא ממש יודעים לעבוד עם הידיים,לתכנן ולהמציא מודלים דיגטליים של חלקים מעולים...</p>
           </div>
           <div class="hero-image">
-            <img src="https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64cb5d4dc926e84bb5f082e6_ImpactLabs-production-section2.webp" alt="Production">
+            <img src="https://www.impactlabs.tech/wp-content/uploads/2022/10/ImpactLabs-production-section2.webp" alt="Production">
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Knowledge Center (Webinars, Courses, Workshops) -->
+    <!-- Knowledge Center -->
     <section id="knowledge" class="knowledge-section">
       <div class="container">
         <h2 class="section-title text-navy">ידע ותוכן מקצועי</h2>
         <div class="knowledge-grid mt-6">
           
-          <div class="card card-navy" style="padding: 48px; background: url('https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/650059f1315eb904fdb0776b_worshop-image-withorangeoverlay.webp') center/cover; position: relative;">
+          <div class="card card-navy" style="padding: 48px; background: url('https://www.impactlabs.tech/wp-content/uploads/2022/10/worshop-image-withorangeoverlay.webp') center/cover; position: relative;">
             <div style="position: absolute; inset: 0; background: var(--gradient-metal-dark); opacity: 0.9;"></div>
             <div style="position: relative; z-index: 2;">
               <div class="tagline" style="color: var(--orange-500); margin-bottom: 8px;">סדנה</div>
@@ -184,11 +185,11 @@
             </div>
           </div>
 
-          <div class="card card-brand" style="padding: 48px; background: url('https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/65005a3962b9a7c37a6b7d1e_courses-learning-imagewithblueoverlay.webp') center/cover; position: relative;">
+          <div class="card card-brand" style="padding: 48px; background: url('https://www.impactlabs.tech/wp-content/uploads/2022/10/courses-learning-imagewithblueoverlay.webp') center/cover; position: relative;">
              <div style="position: absolute; inset: 0; background: var(--gradient-brand); opacity: 0.9;"></div>
              <div style="position: relative; z-index: 2;">
-              <div class="tagline" style="color: var(--orange-500); margin-bottom: 8px;">קורסים והכשרות</div>
-              <h3 style="font-size: 32px; font-weight: 800; margin-bottom: 16px;">קורס Board Design מעשי</h3>
+              <div class="tagline" style="color: var(--orange-500); margin-bottom: 8px;">קורסים</div>
+              <h3 style="font-size: 32px; font-weight: 800; margin-bottom: 16px;">קורסים והכשרות</h3>
               <p style="color: #fff; margin-bottom: 32px; font-size: 18px;">
                 הקורסים מועברים במתחם Impact Labs בחלל חדשני המשלב תשתית מעשית ותרגול טכנולוגי.
               </p>
@@ -196,25 +197,25 @@
              </div>
           </div>
 
-          <div class="card" style="padding: 48px; background: url('https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/65005b6826620da60f7e4483_events-images-with-orange-overlay.webp') center/cover; position: relative;">
+          <div class="card" style="padding: 48px; background: url('https://www.impactlabs.tech/wp-content/uploads/2022/10/events-images-with-orange-overlay.webp') center/cover; position: relative;">
             <div style="position: absolute; inset: 0; background: rgba(255,255,255,0.95);"></div>
             <div style="position: relative; z-index: 2;">
               <div class="tagline" style="color: var(--orange-500); margin-bottom: 8px;">וובינרים</div>
               <h3 class="text-navy" style="font-size: 32px; font-weight: 800; margin-bottom: 16px;">תוכן מקצועי ברשת</h3>
               <p class="text-neutral-500" style="margin-bottom: 32px; font-size: 18px;">
-                הדפסת תלת מימד במתכת, עבור אפליקציות בתחום התעופה, ונחושת. המדריך המלא להדפסה, סריקה, מהפכת ה IoT.
+                הדפסת תלת מימד במתכת, הדפסה תלת מימדית עבור אפליקציות בתחום התעופה, הדפסה תלת מימד בנחושת. המדריך המלא להדפסה בתלת מימד, סדנאות, קורסים, סריקה תלת מימדית, חיתוך לייזר, מהפכת ה IoT
               </p>
               <a href="#" class="btn-inline">לפרטים נוספים &larr;</a>
             </div>
           </div>
           
-          <div class="card card-orange" style="padding: 48px; background: url('https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64c6439066601f786d7cd58b_ImpactLabs-Hakathon-image.webp') center/cover; position: relative;">
+          <div class="card card-orange" style="padding: 48px; background: url('https://www.impactlabs.tech/wp-content/uploads/2022/10/ImpactLabs-Hakathon-image.webp') center/cover; position: relative;">
              <div style="position: absolute; inset: 0; background: var(--orange-500); opacity: 0.95;"></div>
              <div style="position: relative; z-index: 2;">
                 <div class="tagline" style="color: #fff; opacity: 0.9; margin-bottom: 8px;">מרכז חדשנות</div>
                 <h3 style="font-size: 32px; font-weight: 900; margin-bottom: 16px;">מייקאתון או האקתון</h3>
                 <p style="color: rgba(255,255,255,0.9); margin-bottom: 32px; font-size: 18px;">
-                  אירוע אינטנסיבי לפיתוח רעיונות פיזיים מ-0 ל-1, אתגרים טכנולוגיים לגיוס עובדים וחדשנות לחברות.
+                  אתגרים טכנולוגיים לגיוס עובדים וחדשנות לחברות.
                 </p>
                 <a href="#" class="btn-inline" style="color: #fff; border-color: #fff;">לפרטים נוספים &larr;</a>
              </div>
@@ -228,8 +229,8 @@
     <section id="community" class="hero" style="background: var(--gradient-brand); padding: 80px 0; text-align: center;">
       <div class="container">
         <h2 class="display text-white mb-4">הצטרפו לקהילת החומרה הגדולה בישראל</h2>
-        <p class="text-navy-100 mb-6" style="font-size: 20px;">לקבלת עדכונים שוטפים, חדשות, אירועים קרובים וחוויות אימפקט.</p>
-        <button class="btn btn-primary btn-lg" style="padding-left: 48px; padding-right: 48px;">מצטרפים כאן! &larr;</button>
+        <p class="text-navy-100 mb-6" style="font-size: 20px;">לקבלת עדכונים שוטפים, חדשות ואירועים.</p>
+        <button class="btn btn-primary btn-lg" style="padding-left: 48px; padding-right: 48px;">מצטרפים כאן!</button>
       </div>
     </section>
 
@@ -238,8 +239,7 @@
       <div class="container">
         <div class="footer-grid">
           <div>
-            <img src="https://cdn.prod.website-files.com/64b521bdc3111002ca166e4e/64ba4dd03b1239ebdd1b48d2_ImpactLabs-logo-white.png" alt="Impact Labs" style="height: 40px; margin-bottom: 16px;">
-            <p class="text-neutral-400">מרכז חדשנות בחומרה ומוצרים פיזיים.</p>
+            <img src="https://www.impactlabs.tech/wp-content/uploads/2022/10/ImpactLabs-logo-white.png" alt="Impact Labs" style="height: 40px; margin-bottom: 16px;">
             <p class="text-neutral-400 mt-4" style="font-size: 14px; opacity: 0.8;">LEARNING THINGS.<br>CREATING IMPACT</p>
           </div>
           <div>
@@ -268,7 +268,7 @@
               <li><span style="color: #fff">טלפון:</span> 079-555-1444</li>
               <li><span style="color: #fff">אימייל:</span> team@impactlabs.tech</li>
               <li><span style="color: #fff">כתובת:</span> שפע טל 10, תל אביב</li>
-              <li><span style="color: #fff">פעילות:</span> ראשון-חמישי 09:00-18:00</li>
+              <li><span style="color: #fff">פעילות:</span> ראשון-חמישי בין השעות 09:00-18:00</li>
             </ul>
             <div class="mt-4" style="display:flex; gap: 12px; color: var(--orange-500);">
                <i data-lucide="facebook"></i>
@@ -287,6 +287,13 @@
     <script type="module" src="./main.js"></script>
     <script>
       lucide.createIcons();
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const navLinks = document.getElementById('nav-links');
+      if(menuBtn && navLinks) {
+        menuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
     </script>
   </body>
 </html>
